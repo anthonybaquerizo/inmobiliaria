@@ -1,0 +1,13 @@
+<template lang="pug" >
+    h1 Hola mundo
+</template>
+
+<script>
+export default {
+    name: 'Login'
+}
+</script>
+
+<style lang="scss" scoped>
+
+</style>
