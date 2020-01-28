@@ -1,0 +1,9 @@
+@mixin alert-variant-app($color) {
+    border-left: .2rem solid $color;
+}
+
+@each $color, $value in $theme-colors {
+    .border-alert-#{$color} {
+      @include alert-variant-app(theme-color-level($color, $alert-color-level));
+    }
+}

@@ -1,6 +1,6 @@
 <template lang="pug">
-    div.d-flex.flex-column.bg-light#wrapwrap
-        router-view
+div.w-100.h-100.d-flex.flex-column.bg-white.m-auto.position-relative
+    router-view
 </template>
 
 <script>
