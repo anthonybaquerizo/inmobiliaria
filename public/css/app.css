@@ -11366,6 +11366,38 @@ a.text-dark:focus {
   }
 }
 
+.border-alert-primary {
+  border-left: 0.2rem solid #004085;
+}
+
+.border-alert-secondary {
+  border-left: 0.2rem solid #383d41;
+}
+
+.border-alert-success {
+  border-left: 0.2rem solid #155724;
+}
+
+.border-alert-info {
+  border-left: 0.2rem solid #0c5460;
+}
+
+.border-alert-warning {
+  border-left: 0.2rem solid #856404;
+}
+
+.border-alert-danger {
+  border-left: 0.2rem solid #721c24;
+}
+
+.border-alert-light {
+  border-left: 0.2rem solid #818182;
+}
+
+.border-alert-dark {
+  border-left: 0.2rem solid #1b1e21;
+}
+
 html,
 body {
   position: relative;
@@ -11392,8 +11424,8 @@ body {
 
 #wrapwrap {
   position: relative;
-  display: block;
-  height: auto;
-  min-height: 100%;
+  margin: 0 auto;
+  width: 100% !important;
+  height: 100% !important;
 }
 

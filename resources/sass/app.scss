@@ -10,6 +10,9 @@
 // animated
 @import '~animate.css/animate.min.css';
 
+// Alerta
+@import './alert';
+
 html, body {
     position: relative;
     width: 100%;
@@ -35,7 +38,7 @@ body {
 
 #wrapwrap {
     position: relative;
-    display: block;
-    height: auto;
-    min-height: 100%;
+    margin: 0 auto;
+    width: 100% !important;
+    height: 100% !important;
 }
