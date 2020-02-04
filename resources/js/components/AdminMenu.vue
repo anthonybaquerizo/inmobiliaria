@@ -1,5 +1,6 @@
 <template lang="pug">
 nav.w-100.navbar.navbar-expand-lg.navbar-light.bg-light.p-0.border
+    a.btn.btn-sm.btn-transparent.navbar-brand(href="#") Navbar
     button.navbar-toggler(
         type="button",
         data-toggle="collapse",
@@ -12,9 +13,9 @@ nav.w-100.navbar.navbar-expand-lg.navbar-light.bg-light.p-0.border
     div.collapse.navbar-collapse#navbarSupportedContent
         ul.navbar-nav.mr-auto
             li.nav-item.active
-                a.nav-link(href="#") Home
+                a.btn.btn-sm.btn-transparent.nav-link(href="#") Home
             li.nav-item.dropdown
-                a.nav-link.dropdown-toggle#navbarDropdown(
+                a.btn.btn-sm.btn-transparent.nav-link.dropdown-toggle#navbarDropdown(
                     role="button",
                     data-toggle="dropdown",
                     aria-haspopup="true",
@@ -27,15 +28,15 @@ nav.w-100.navbar.navbar-expand-lg.navbar-light.bg-light.p-0.border
                         div.dropdown-menu(aria-labelledby="ddd")
                             a.dropdown-item(href="#") Action 3
         div.dropdown
-            button.btn.btn-transparent.btn-sm.px-0#navbarDropdownAdmin(
-                type="button",
+            a.btn.btn-transparent.btn-sm.dropdown-toggle.ml-2#navbarDropdownAdmin(
+                href="#"
                 data-toggle="dropdown",
                 aria-haspopup="true",
                 aria-expanded="false"
             )
                 i.fa.fa-user
                 |  Adminsitrador
-                div.dropdown-menu(aria-labelledby="navbarDropdownAdmin")
+                div.dropdown-menu.dropdown-menu-right(aria-labelledby="navbarDropdownAdmin")
                     a.dropdown-item(href="#") Configuración
                     router-link.dropdown-item(
                         :to="{ name: 'user_create_path' }"

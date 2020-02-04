@@ -2020,6 +2020,7 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
   name: 'Menu'
 });
@@ -2281,6 +2282,13 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
+//
+//
+//
+//
+//
+//
+//
 //
 //
 //
@@ -38446,6 +38454,14 @@ var render = function() {
         "w-100 navbar navbar-expand-lg navbar-light bg-light p-0 border"
     },
     [
+      _c(
+        "a",
+        {
+          staticClass: "btn btn-sm btn-transparent navbar-brand",
+          attrs: { href: "#" }
+        },
+        [_vm._v("Navbar")]
+      ),
       _vm._m(0),
       _c(
         "div",
@@ -38457,12 +38473,12 @@ var render = function() {
           _vm._m(1),
           _c("div", { staticClass: "dropdown" }, [
             _c(
-              "button",
+              "a",
               {
-                staticClass: "btn btn-transparent btn-sm px-0",
+                staticClass: "btn btn-transparent btn-sm dropdown-toggle ml-2",
                 attrs: {
                   id: "navbarDropdownAdmin",
-                  type: "button",
+                  href: "#",
                   "data-toggle": "dropdown",
                   "aria-haspopup": "true",
                   "aria-expanded": "false"
@@ -38474,7 +38490,7 @@ var render = function() {
                 _c(
                   "div",
                   {
-                    staticClass: "dropdown-menu",
+                    staticClass: "dropdown-menu dropdown-menu-right",
                     attrs: { "aria-labelledby": "navbarDropdownAdmin" }
                   },
                   [
@@ -38535,15 +38551,20 @@ var staticRenderFns = [
     var _c = _vm._self._c || _h
     return _c("ul", { staticClass: "navbar-nav mr-auto" }, [
       _c("li", { staticClass: "nav-item active" }, [
-        _c("a", { staticClass: "nav-link", attrs: { href: "#" } }, [
-          _vm._v("Home")
-        ])
+        _c(
+          "a",
+          {
+            staticClass: "btn btn-sm btn-transparent nav-link",
+            attrs: { href: "#" }
+          },
+          [_vm._v("Home")]
+        )
       ]),
       _c("li", { staticClass: "nav-item dropdown" }, [
         _c(
           "a",
           {
-            staticClass: "nav-link dropdown-toggle",
+            staticClass: "btn btn-sm btn-transparent nav-link dropdown-toggle",
             attrs: {
               id: "navbarDropdown",
               role: "button",
@@ -38702,7 +38723,7 @@ var render = function() {
       _c("admin-menu"),
       _c(
         "main",
-        { staticClass: "w-100 h-auto d-flex p-2" },
+        { staticClass: "w-100 h-100 d-flex p-2" },
         [_c("router-view")],
         1
       )
@@ -39044,9 +39065,51 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c("h1", [_vm._v("Panel")])
+  return _vm._m(0)
 }
-var staticRenderFns = []
+var staticRenderFns = [
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c(
+      "div",
+      {
+        staticClass:
+          "w-100 h-100 d-flex justify-content-center align-items-center"
+      },
+      [
+        _c("div", { staticClass: "row" }, [
+          _c(
+            "div",
+            { staticClass: "col-xl-8 col-lg-8 col-md-10 col-sm-12 col-12" },
+            [
+              _c("div", { staticClass: "row" }, [
+                _c(
+                  "div",
+                  { staticClass: "col-xl-2 col-lg-2 col-md-3 col-sm-4 col-4" },
+                  [
+                    _c(
+                      "button",
+                      {
+                        staticClass:
+                          "btn btn-lg btn-light border d-flex flex-column align-items-center"
+                      },
+                      [
+                        _c("i", { staticClass: "fa fa-user" }),
+                        _c("span", [_vm._v("entro")])
+                      ]
+                    )
+                  ]
+                )
+              ])
+            ]
+          )
+        ])
+      ]
+    )
+  }
+]
 render._withStripped = true
 
 

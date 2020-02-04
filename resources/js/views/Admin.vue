@@ -1,7 +1,7 @@
 <template lang="pug">
 div.w-100.h-100.d-flex.flex-column.align-items-start
     admin-menu
-    main.w-100.h-auto.d-flex.p-2
+    main.w-100.h-100.d-flex.p-2
         router-view
 </template>
 
