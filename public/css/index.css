@@ -1,0 +1,64 @@
+body, html {
+    font-size: .9rem;
+}
+
+.carousel-inner-responsive {
+    height: 15rem;
+}
+
+.header-banners {
+    width: 100% !important;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    border-bottom: .02rem solid rgba(248, 248, 248, 0.4);
+}
+
+img.logo {
+    width: 7rem;
+    height: 4rem;
+}
+
+.header-banners img.social {
+    width: 2.85rem;
+    height: 2.25rem;
+}
+
+.content-img-featured {
+    width: 7rem;
+    height: 6rem;
+}
+
+/*
+ * =========================================================================
+ * Responsive
+ * =========================================================================
+ */
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+    .carousel-inner-responsive {
+        height: 15rem;
+    }
+}
+
+/*Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) {
+    .carousel-inner-responsive {
+        height: 18rem;
+    }
+}
+
+/* Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) {
+    .carousel-inner-responsive {
+        height: 25rem;
+    }
+}
+
+/* Extra large devices (large desktops, 1200px and up)*/
+@media (min-width: 1200px) {
+    .carousel-inner-responsive {
+        height: 25rem;
+    }
+}
